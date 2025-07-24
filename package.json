@@ -5,20 +5,26 @@
   "packageManager": "pnpm@10.11.0",
   "description": "",
   "license": "MIT",
-  "homepage": "https://github.com/antfu/vitejs-markdown-vue-demo#readme",
+  "homepage": "https://github.com/zys8119/vitejs-markdown-vue-demo#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/antfu/vitejs-markdown-vue-demo.git"
+    "url": "git+https://github.com/zys8119/vitejs-markdown-vue-demo.git"
   },
   "bugs": {
-    "url": "https://github.com/antfu/vitejs-markdown-vue-demo/issues"
+    "url": "https://github.com/zys8119/vitejs-markdown-vue-demo/issues"
   },
   "keywords": [
+    "vitejs-markdown-vue-demo",
     "unplugin",
+    "unplugin-vue-markdown",
     "vite",
-    "webpack",
-    "rollup",
-    "transform"
+    "vitejs",
+    "markdown",
+    "demo",
+    "vue",
+    "vuejs",
+    "vue-markdown",
+    "vue-demo"
   ],
   "exports": {
     ".": "./dist/index.js",
@@ -91,7 +97,7 @@
     }
   },
   "dependencies": {
-    "@vitejs/plugin-vue-jsx": "^5.0.1",
+    "lodash": "^4.17.21",
     "unplugin": "^2.3.4"
   },
   "devDependencies": {
@@ -100,6 +106,7 @@
     "@nuxt/schema": "^3.17.4",
     "@types/lodash": "^4.17.20",
     "@types/node": "^22.15.21",
+    "@vitejs/plugin-vue-jsx": "^5.0.1",
     "bumpp": "^10.1.1",
     "eslint": "^9.27.0",
     "nodemon": "^3.1.10",

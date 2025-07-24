@@ -11,12 +11,12 @@ importers:
       '@farmfe/core':
         specifier: '>=1'
         version: 1.7.5
-      '@vitejs/plugin-vue-jsx':
-        specifier: ^5.0.1
-        version: 5.0.1(vite@6.3.5(@types/node@22.15.21)(jiti@2.4.2)(less@4.4.0)(terser@5.39.2)(tsx@4.19.4)(yaml@2.8.0))(vue@3.5.18(typescript@5.8.3))
       esbuild:
         specifier: '*'
         version: 0.25.4
+      lodash:
+        specifier: ^4.17.21
+        version: 4.17.21
       unplugin:
         specifier: ^2.3.4
         version: 2.3.5
@@ -36,6 +36,9 @@ importers:
       '@types/node':
         specifier: ^22.15.21
         version: 22.15.21
+      '@vitejs/plugin-vue-jsx':
+        specifier: ^5.0.1
+        version: 5.0.1(vite@6.3.5(@types/node@22.15.21)(jiti@2.4.2)(less@4.4.0)(terser@5.39.2)(tsx@4.19.4)(yaml@2.8.0))(vue@3.5.18(typescript@5.8.3))
       bumpp:
         specifier: ^10.1.1
         version: 10.1.1
@@ -65,7 +68,7 @@ importers:
         version: 3.1.4(@types/debug@4.1.12)(@types/node@22.15.21)(jiti@2.4.2)(less@4.4.0)(terser@5.39.2)(tsx@4.19.4)(yaml@2.8.0)
       webpack:
         specifier: ^5.99.9
-        version: 5.99.9(esbuild@0.25.4)
+        version: 5.99.9
 
   playground:
     dependencies:
@@ -7969,16 +7972,14 @@ snapshots:
 
   term-size@2.2.1: {}
 
-  terser-webpack-plugin@5.3.14(esbuild@0.25.4)(webpack@5.99.9(esbuild@0.25.4)):
+  terser-webpack-plugin@5.3.14(webpack@5.99.9):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
       jest-worker: 27.5.1
       schema-utils: 4.3.2
       serialize-javascript: 6.0.2
       terser: 5.39.2
-      webpack: 5.99.9(esbuild@0.25.4)
-    optionalDependencies:
-      esbuild: 0.25.4
+      webpack: 5.99.9
 
   terser@5.39.2:
     dependencies:
@@ -8454,7 +8455,7 @@ snapshots:
 
   webpack-virtual-modules@0.6.2: {}
 
-  webpack@5.99.9(esbuild@0.25.4):
+  webpack@5.99.9:
     dependencies:
       '@types/eslint-scope': 3.7.7
       '@types/estree': 1.0.7
@@ -8477,7 +8478,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 4.3.2
       tapable: 2.2.2
-      terser-webpack-plugin: 5.3.14(esbuild@0.25.4)(webpack@5.99.9(esbuild@0.25.4))
+      terser-webpack-plugin: 5.3.14(webpack@5.99.9)
       watchpack: 2.4.3
       webpack-sources: 3.2.3
     transitivePeerDependencies:
