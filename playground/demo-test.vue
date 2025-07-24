@@ -5,7 +5,7 @@
     </div>
 </template>
 <script setup lang="ts">
-
+import dep from './dep.vue'
 </script>
 <style scoped lang="less">
 .demo-test {}
