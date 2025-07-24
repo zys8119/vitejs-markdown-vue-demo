@@ -1,122 +1,45 @@
-# vitejs-markdown-vue-demo
+---
+blogs:
+    title: markdown-vue-demo
+    description: 基于vue的markdown演示Demo文档
+    badge: Vite
+    time: "2015-07-24"
+---
 
-[![NPM version](https://img.shields.io/npm/v/vitejs-markdown-vue-demo?color=a1b858&label=)](https://www.npmjs.com/package/vitejs-markdown-vue-demo)
+# 基于vue的markdown演示Demo文档
 
-Starter template for [unplugin](https://github.com/unjs/unplugin).
+## 安装
 
-## Template Usage
-
-To use this template, clone it down using:
-
-```bash
-npx degit unplugin/vitejs-markdown-vue-demo my-unplugin
+```
+pnpm i markdown-vue-demo
 ```
 
-And do a global replacement of `vitejs-markdown-vue-demo` with your plugin name.
+## 使用
 
-Then you can start developing your unplugin 🔥
-
-To test your plugin, run: `pnpm run dev`
-To release a new version, run: `pnpm run release`
-
-## Install
-
-```bash
-npm i vitejs-markdown-vue-demo
-```
-
-<details>
-<summary>Vite</summary><br>
+1. 引入插件
 
 ```ts
 // vite.config.ts
-import Starter from 'vitejs-markdown-vue-demo/vite'
+import Vue from '@vitejs/plugin-vue'
+import MarkdownVueDemo from 'markdown-vue-demo/vite'
 
 export default defineConfig({
   plugins: [
-    Starter({ /* options */ }),
+    MarkdownVueDemo({ /* options */ }),
   ],
 })
 ```
 
-Example: [`playground/`](./playground/)
+2.在markdown中使用如下代码格式:
 
-<br></details>
-
-<details>
-<summary>Rollup</summary><br>
-
-```ts
-// rollup.config.js
-import Starter from 'vitejs-markdown-vue-demo/rollup'
-
-export default {
-  plugins: [
-    Starter({ /* options */ }),
-  ],
-}
+````md
+``` Demo
+# 标题
+## 二级标题
+title: 标题，等同上面效果
+desc: 标题，等同上面效果
+other-attributes: 其他属性
+...: 更多属性
+@/components/Demo.vue
 ```
-
-<br></details>
-
-<details>
-<summary>Webpack</summary><br>
-
-```ts
-// webpack.config.js
-module.exports = {
-  /* ... */
-  plugins: [
-    require('vitejs-markdown-vue-demo/webpack')({ /* options */ })
-  ]
-}
-```
-
-<br></details>
-
-<details>
-<summary>Nuxt</summary><br>
-
-```ts
-// nuxt.config.js
-export default defineNuxtConfig({
-  modules: [
-    ['vitejs-markdown-vue-demo/nuxt', { /* options */ }],
-  ],
-})
-```
-
-> This module works for both Nuxt 2 and [Nuxt Vite](https://github.com/nuxt/vite)
-
-<br></details>
-
-<details>
-<summary>Vue CLI</summary><br>
-
-```ts
-// vue.config.js
-module.exports = {
-  configureWebpack: {
-    plugins: [
-      require('vitejs-markdown-vue-demo/webpack')({ /* options */ }),
-    ],
-  },
-}
-```
-
-<br></details>
-
-<details>
-<summary>esbuild</summary><br>
-
-```ts
-// esbuild.config.js
-import { build } from 'esbuild'
-import Starter from 'vitejs-markdown-vue-demo/esbuild'
-
-build({
-  plugins: [Starter()],
-})
-```
-
-<br></details>
+````

@@ -3,6 +3,7 @@ import crypto from "crypto";
 import _ from "lodash";
 import { resolve } from "path";
 import { existsSync, readFileSync } from "fs";
+import { Options } from "./types";
 
 function md5(input) {
   return crypto.createHash("md5").update(input).digest("hex");
@@ -19,34 +20,18 @@ function md5(input) {
 @/components/indoor-nav.vue
 ```
  */
-const defaultOptions = {
+const defaultOptions: Options = {
   // Demo组件接受的props字段
   fieldName: "src",
   // 使用的组件名称
   componentName: "Demo",
   // 导入组件
   importComponent: true,
-} as const;
-export type MarkDownVueDemoOptions = Partial<typeof defaultOptions>;
-export interface DemoInfo {
-  demo: any;
-  code: string;
-  imports: Array<{
-    id: string;
-    code: string;
-  }>;
-  info: {
-    [key: string]: any;
-    title?: string;
-    desc?: string;
-    absoluteSrc: string;
-    mainSrc: string;
-    src: string;
-  };
-}
+};
+
 const demoFileHexWeakMap = new WeakMap();
 const demoFileHexMap = new Map();
-export default function (options?: MarkDownVueDemoOptions) {
+export default function (options?: Options) {
   const config = _.merge({}, defaultOptions, options);
   let serve: ViteDevServer = {} as unknown as ViteDevServer;
   return [

@@ -21,6 +21,7 @@
     "motion-v": "^1.6.1",
     "naive-ui": "^2.42.0",
     "unplugin-vue-markdown": "^29.1.0",
+    "vitejs-markdown-vue-demo": "link:..",
     "vue": "^3.5.18",
     "vue-router": "^4.5.1"
   }
