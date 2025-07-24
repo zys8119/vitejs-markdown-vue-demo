@@ -1,11 +1,3 @@
----
-blogs:
-    title: markdown-vue-demo
-    description: 基于vue的markdown演示Demo文档
-    badge: Vite
-    time: "2015-07-24"
----
-
 # 基于vue的markdown演示Demo文档
 
 ## 安装
@@ -31,6 +23,8 @@ export default defineConfig({
 ```
 
 2.在markdown中使用如下代码格式:
+
+> vue中markdown解析推荐使用`unplugin-vue-markdown`
 
 ````md
 ``` Demo
