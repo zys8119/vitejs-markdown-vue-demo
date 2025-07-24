@@ -37,3 +37,7 @@ other-attributes: 其他属性
 @/components/Demo.vue
 ```
 ````
+
+## 效果
+
+![alt text](image.png)

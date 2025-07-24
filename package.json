@@ -45,7 +45,8 @@
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "image.png"
   ],
   "scripts": {
     "build": "tsdown",
