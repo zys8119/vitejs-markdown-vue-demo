@@ -90,12 +90,14 @@
     }
   },
   "dependencies": {
+    "@vitejs/plugin-vue-jsx": "^5.0.1",
     "unplugin": "^2.3.4"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.13.2",
     "@nuxt/kit": "^3.17.4",
     "@nuxt/schema": "^3.17.4",
+    "@types/lodash": "^4.17.20",
     "@types/node": "^22.15.21",
     "bumpp": "^10.1.1",
     "eslint": "^9.27.0",

@@ -1,5 +1,36 @@
-import antfu from '@antfu/eslint-config'
+import antfu from "@antfu/eslint-config";
 
 export default antfu({
-  type: 'lib',
-})
+  type: "lib",
+  rules: {
+    "style/semi": "off",
+    "style/quotes": "off",
+    "style/operator-linebreak": "off",
+    "style/member-delimiter-style": "off",
+    "ts/consistent-type-imports": "off",
+    "perfectionist/sort-imports": "off",
+    "unicorn/prefer-node-protocol": "off",
+    "ts/explicit-function-return-type": "off",
+    "ts/no-explicit-any": "off",
+    "style/no-trailing-spaces": "off",
+    "style/comma-dangle": "off",
+    "style/arrow-parens": "off",
+    "regexp/no-unused-capturing-group": "off",
+    "regexp/no-useless-quantifier": "off",
+    "style/brace-style": "off",
+    "prefer-template": "off",
+    "style/quote-props": "off",
+    "import/no-named-default": "off",
+    "antfu/top-level-function": "off",
+    "new-cap": "off",
+    "regexp/optimal-lookaround-quantifier": "off",
+    "regexp/optimal-quantifier-concatenation": "off",
+    "regexp/prefer-d": "off",
+    "regexp/prefer-plus-quantifier": "off",
+    "regexp/negation": "off",
+    "import/newline-after-import": "off",
+  },
+  jsonc: false,
+  vue: false,
+  markdown: false,
+});
