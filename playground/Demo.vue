@@ -38,7 +38,7 @@
     </div>
 </template>
 <script setup lang="ts">
-import { DemoInfo } from "vitejs-markdown-vue-demo"
+import { DemoInfo } from "vitejs-markdown-vue-demo/types"
 import hljs from 'highlight.js'
 import { createDiscreteApi } from 'naive-ui'
 const { message } = createDiscreteApi(['message'])
