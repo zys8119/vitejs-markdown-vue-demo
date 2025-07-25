@@ -3,7 +3,7 @@
 ## 安装
 
 ```
-pnpm i markdown-vue-demo
+pnpm i vitejs-markdown-vue-demo
 ```
 
 ## 使用
@@ -13,7 +13,7 @@ pnpm i markdown-vue-demo
 ```ts
 // vite.config.ts
 import Vue from '@vitejs/plugin-vue'
-import MarkdownVueDemo from 'markdown-vue-demo/vite'
+import MarkdownVueDemo from 'vitejs-markdown-vue-demo/vite'
 
 export default defineConfig({
   plugins: [
